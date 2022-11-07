@@ -35,7 +35,7 @@ pipeline {
         stage("Build image"){
             steps{
                 script{
-                    sh "cd anotherReactFolder && docker build -t mlarry/larryreactapp ."
+                    sh "cd anotherReact && docker build -t mlarry/larryreactapp ."
                     
                 }
             }
