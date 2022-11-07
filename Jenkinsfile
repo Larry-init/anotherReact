@@ -17,7 +17,7 @@ pipeline {
 
                 script {
                     sh "pwd && ls"
-                    sh "git clone https://github.com/Larry-init/mynewrepo/tree/main/mynewapp"
+                    sh "git clone https://github.com/Larry-init/anotherReact.git"
                 }
                 
             }
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script{
                     
-                    sh "cd mynewapp && npm install"
+                    sh "cd anotherReact && npm install"
                    
                     
                 }
@@ -35,7 +35,7 @@ pipeline {
         stage("Build image"){
             steps{
                 script{
-                    sh "cd mynewrepo && docker build -t mlarry/larryreactapp ."
+                    sh "cd anotherReactFolder && docker build -t mlarry/larryreactapp ."
                     
                 }
             }
