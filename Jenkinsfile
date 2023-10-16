@@ -25,7 +25,7 @@ pipeline {
         stage("Build"){
             steps {
                 script{
-                    
+                    sh "java --version"
                     sh "cd anotherReact && npm install"
                    
                     
