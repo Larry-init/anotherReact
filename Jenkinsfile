@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script{
                     sh "java --version"
-                    sh "cd anotherReact && npm install"
+                    sh "npm install"
                    
                     
                 }
